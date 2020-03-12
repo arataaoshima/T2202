@@ -1,0 +1,9 @@
+<h1 id="title">Home#top</h1>
+<p>Find me in app/views/home/top.html.erb</p>
+<button id="btn">Clieck Here</button>
+<button id="hide-btn">Hide!</button>
+
+<%= form_tag({controller: "students", action: "import", method: "post"}, {multipart: true}) do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "オブジェクトを一括インポート" %>
+<% end %>
